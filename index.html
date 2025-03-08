@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Interaktif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header dengan Efek Scroll -->
+    <header id="main-header">
+        <h1>Selamat Datang di Halaman Interaktif</h1>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Tentang -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p id="text-content">Klik tombol di bawah ini untuk mengubah teks ini.</p>
+        <button id="change-text-btn">Ubah Teks</button>
+    </section>
+
+    <!-- Bagian Galeri dengan Animasi Hover -->
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <div class="gallery-container">
+            <img src="https://source.unsplash.com/random/200x200" alt="Gambar 1">
+            <img src="https://source.unsplash.com/random/201x201" alt="Gambar 2">
+            <img src="https://source.unsplash.com/random/202x202" alt="Gambar 3">
+        </div>
+    </section>
+
+    <!-- Form Kontak dengan Input Event -->
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukkan Nama" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
